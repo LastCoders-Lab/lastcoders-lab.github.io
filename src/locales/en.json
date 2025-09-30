@@ -1,0 +1,41 @@
+{
+  "hello": "Hello",
+  "lang": "Language",
+  "nav.main": "Home",
+  "nav": {
+    "main": "Home",
+    "projects": "Projects",
+    "minecraft": "Minecraft",
+    "about": "About"
+  },
+  "slogan": {
+    "quote": "Fifty years of wonder, admiration, and joy",
+    "cite": "<a target='blank' href='https://en.wikipedia.org/wiki/Fred_Brooks'>Frederick Phillips Brooks</a>"
+  },
+  "home": {
+    "title": "Hello",
+    "text": "My name is Maria. Welcome to my laboratory!\nI’m a backend developer who started out with PHP and Drupal (this system was my passion for many years), later explored Symfony. Now I’m diving into Java, while also developing in Android and game development.\nAs a hobby — and more than just a hobby — I create plugins for Minecraft servers.\nEvery step of my journey has been an exciting experience, and I’m glad You’re here."
+  },
+  "about": {
+    "title": "About me",
+    "text": "The “About Me” section is still under construction. Soon, there will be a story about what I do and what inspires me."
+  },
+  "favorites": {
+    "title": "My favorite technologies"
+  },
+  "projects": {
+    "title": "Projects",
+    "text": "Here are some of my web projects"
+  },
+  "minecraft": {
+    "title": "Minecraft",
+    "text": "In this special section, experiments with Minecraft plugins (Spigot, Paper) are carried out.\nBy the way, I take orders :)"
+  },
+  "footer": {
+    "email": "Email",
+    "mailto": "Send mail",
+    "show-email": "Show email",
+    "copy": "Copy",
+    "email-copied": "Email copied!"
+  }
+}

@@ -1,0 +1,70 @@
+.navbar {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 0.5rem;
+
+  @include desktop {
+    padding-top: 30px;
+  }
+
+  @include mobile {
+    padding-top: 15px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+
+    @include tablet {
+      column-gap: 40px;
+    }
+  }
+
+  .container {
+    @include mobile {
+      padding-inline: initial;
+    }
+  }
+
+  &__logo {
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .nav__list {
+    display: flex;
+    gap: 1.8rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .nav__link {
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav__link:hover {
+    text-decoration: underline;
+    color: var(--color-accent1);
+  }
+
+  .breadcrumbs {
+    font-family: "Source Code Pro", serif;
+    font-weight: bold;
+    //letter-spacing: 0.1em;
+    font-size: 1.2rem;
+  }
+
+  .fi {
+    border-radius: 50%;
+    font-size: 22px;
+    @include square(22);
+  }
+}
+

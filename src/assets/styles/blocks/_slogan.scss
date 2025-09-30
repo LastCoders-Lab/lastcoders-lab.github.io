@@ -1,0 +1,96 @@
+
+.slogan {
+  //background-color: var(--color-accent2);
+  background-color: var(--color-accent1);
+  color: var(--color-light);
+
+  &__body {
+    display: flex;
+    align-items: start;
+    row-gap: 35px;
+    //color: var(--color-light);
+    font-size: 30px;
+
+    @include mobile {
+      flex-direction: column;
+      column-gap: 35px;
+    }
+  }
+
+  &__quote {
+    text-align: right;
+    flex-basis: 60%;
+
+    @include mobile {
+      width: 100%;
+      text-align: center;
+    }
+
+    blockquote {
+      display: block;
+      &::before {
+        font-size: 64px;
+        content: "\"";
+        margin-right: 2px;
+      }
+    }
+    cite {
+      display: block;
+      font-size: 20px;
+      padding: 16px 0px;
+      //color: var(--color-offtop1);
+      &::before {
+        content: "\2014 \0020";
+      }
+    }
+
+    @include mobile {
+      @include mobile {
+        blockquote {
+          &::before {
+            font-size: 36px;
+          }
+        }
+        cite {
+          font-size: 16px;
+        }
+      }
+      }
+  }
+
+
+  &__icon {
+    flex-basis: 40%;
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include mobile {
+      width: 100%;
+      text-align: center;
+      font-size: 3em;
+    }
+  }
+}
+
+
+
+
+
+/*
+.promo {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.promo__quote {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.promo__cite {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+}*/

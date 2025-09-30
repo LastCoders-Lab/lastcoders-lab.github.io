@@ -1,0 +1,42 @@
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1{
+    margin: 0;
+  }
+  &__link {
+    display: inline-block;
+    margin-left: 0.5em;
+    font-size: 1.6em;
+  }
+}
+
+.project-content {
+  img {
+    margin: 20px 10px 20px 0;
+    display: inline-block;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  }
+}
+
+.project-footer {
+  margin-top: 30px;
+  &__tags {
+    text-align: left;
+  }
+  &__tag{
+    @include fluid-text(16, 14);
+    display: inline-block;
+    padding: 2px;
+    //color: var(--color-offtop1);
+    //border-bottom: var(--color-offtop1) 1px dashed;
+    background-color: rgba(183, 183, 183, 0.85);
+    border-radius: 6px;
+    margin-right: 20px;
+    &:before {
+      content: "#";
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import
+  'normalize',
+  'icons',
+  'fonts',
+  'font-awesome',
+  'mixins',
+  'media',
+  'variables',
+  'globals';
+
+@import
+  'blocks/header',
+  'blocks/navbar',
+  'blocks/slogan',
+  'blocks/home',
+  'blocks/footer',
+  'blocks/burger-menu',
+  'blocks/projects',
+  'blocks/article';
+
+@import 'flag-icons/css/flag-icons.min.css';

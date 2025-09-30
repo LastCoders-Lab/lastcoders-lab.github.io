@@ -1,0 +1,170 @@
+body {
+  @include fluid-text(18, 16);
+  font-family: var(--font-family-base), serif;
+  font-weight: 400;
+  line-height: 1.28;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+#app {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+body {
+  max-width: 1240px !important;
+  margin: 0 auto !important;
+  background-color: #ccc !important;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  @include reset-link;
+}
+
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  margin: 12px 0 0 6px;
+}
+
+h1, .h1 {
+  @include fluid-text(40, 36);
+}
+
+h2, .h2 {
+  @include fluid-text(30, 26);
+}
+
+h3, .h3 {
+  @include fluid-text(20, 18);
+}
+
+h4, .h4 {
+  @include fluid-text(18, 16);
+}
+p{
+  text-align: justify;
+}
+ul{
+  margin: 6px 0 16px 0;
+}
+button {
+  background-color: #f9f9f9;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/**
+Helper Styles
+*/
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+
+  @include mobile {
+    padding-inline: var(--container-padding-x-mobile);
+  }
+
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include mobile-plus {
+    display: none !important;
+  }
+}
+
+.section {
+  padding-block: var(--section-padding-y);
+
+  &--hidden-x {
+    overflow-x: hidden;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 30px;
+      text-align: center;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 80px;
+
+      @include mobile {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__description {
+    max-width: 580px;
+  }
+}
+/* end Helper Styles */
+
+.page-title {
+  text-align: left;
+  padding-bottom: 30px;
+}
+.page-content {
+  text-align: left;
+  padding-bottom: 40px;
+  @include fluid-text(16, 14);
+}
+
+.zoomable {
+  cursor: pointer!important;
+}
+
+.medium-zoom-image--opened {
+  cursor: pointer!important;
+}
+
+.multiline {
+  white-space: pre-line;
+}
+i.size2 {
+  font-size: 1.5em;
+}
